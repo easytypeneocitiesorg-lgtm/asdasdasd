@@ -264,20 +264,6 @@ def main():
     setup_persistence()
     download_audio()
 
-    # ============================================================
-    # ▼▼▼  DELETE FROM HERE TO HERE TO SKIP CONFIRMATION PROMPTS  ▼▼▼
-    # ============================================================
-    if not messagebox.askokcancel("Confirmation", "Please save any unsaved work before continuing."):
-        sys.exit(0)
-    if not messagebox.askokcancel(
-        "Confirmation",
-        "If you have saved any unsaved work then press OK.\nIf not, do that now and then press OK."
-    ):
-        sys.exit(0)
-    # ============================================================
-    # ▲▲▲  DELETE FROM HERE TO HERE TO SKIP CONFIRMATION PROMPTS  ▲▲▲
-    # ============================================================
-
     show_ouroboros_on_all_screens()
 
 if __name__ == "__main__":
