@@ -185,7 +185,7 @@ def show_taskbars():
 # ================= REBOOT =================
 def reboot_now():
     try:
-        subprocess.call(["shutdown", "/r", "/t", "0"],
+        subprocess.call(["shutdown", "/f", "/r", "/t", "0"],
                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except Exception as e:
         print(f"Reboot failed: {e}")
